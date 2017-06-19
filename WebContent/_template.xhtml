@@ -5,8 +5,9 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head />
-
+	<h:outputStylesheet library="css" name="bootstrap.css" />
 <h:body>
+	<div class="container">
 	<div id="cabecalho">
 		<h:graphicImage library="img" name="logo.png" style="width: 200px;" />
 		<h1>
@@ -22,6 +23,7 @@
 		copyright 2017
 		<ui:insert name="texto">
 		</ui:insert>
+	</div>
 	</div>
 </h:body>
 </html>

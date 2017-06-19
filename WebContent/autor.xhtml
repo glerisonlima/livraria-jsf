@@ -13,12 +13,11 @@
 		<h:form>
 			<fieldset>
 				<legend>Dados do Autor</legend>
-				<h:panelGrid columns="2">
+				<div class="form-group">
 					<h:outputLabel value="Nome:" for="nome" />
-					<h:inputText id="nome" value="#{autorBean.autor.nome}" />
-					<h:commandButton value="Gravar" action="#{autorBean.gravar}" />
-
-				</h:panelGrid>
+					<h:inputText class="form-control" id="nome" value="#{autorBean.autor.nome}" /><br />
+					<h:commandButton class="btn btn-info" value="Gravar" action="#{autorBean.gravar}" />
+				</div>
 
 
 
